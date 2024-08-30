@@ -216,6 +216,7 @@ class BaseEncoderMaskerDecoder(BaseModel):
 
         # Real forward
         tf_rep = self.forward_encoder(wav)
+       # tf_rep.to('cpu')
         est_masks = self.forward_masker(tf_rep)
         masked_tf_rep = self.apply_masks(tf_rep, est_masks)
         decoded = self.forward_decoder(masked_tf_rep)

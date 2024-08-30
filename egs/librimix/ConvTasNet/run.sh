@@ -7,7 +7,7 @@ set -o pipefail
 # If you haven't generated LibriMix start from stage 0
 # Main storage directory. You'll need disk space to store LibriSpeech, WHAM noises
 # and LibriMix. This is about 500 Gb
-storage_dir=
+storage_dir=/Users/willwedgwood/Documents/Git/Speech_Separation/asteroid/LibriMix_Dataset
 
 # After running the recipe a first time, you can run it from stage 3 directly to train new models.
 
