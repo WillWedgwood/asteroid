@@ -165,7 +165,7 @@ def main(sample_rate, metadata_path):
     epoch_times = []
 
     # Create a report file with a timestamp
-    report_filename = f"training_report_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+    report_filename = f"Trained_Models/Training_Reports/training_report_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
 
     with open(report_filename, "w") as report_file:
 

@@ -120,6 +120,7 @@ venv.bak/
 
 # My Additions
 *.flac
-*.txt
 *.wav
 Audio_Sources/
+Datasets/Clean_Datasets/LibriSpeech_Datasets/
+Trained_Models/Training_Reports/
