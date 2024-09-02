@@ -64,9 +64,9 @@ def main(model_path, input_audio_path, output_audio_path, sample_rate):
     print(f"Processed audio file saved at: {output_audio_path}")
 
 if __name__ == '__main__':
-    model_path = get_path('Trained_Models/model_bankhol.pth')  # Path to your .pth model file
+    model_path = get_path('Trained_Models/model_100_8k_2epochs.pth')  # Path to your .pth model file
     input_audio_path = get_path('Datasets/Real_Commentary/Sky/Football/Football_Left_splits_8000Hz/Football_Left_2.wav')  # Path to the input audio file
-    output_audio_path = get_path('Results/output_bankhol.wav')  # Path to save the output WAV file
+    output_audio_path = get_path('Results/output_100_8k_2epochs.wav')  # Path to save the output WAV file
 
     sample_rate = 8000
 
