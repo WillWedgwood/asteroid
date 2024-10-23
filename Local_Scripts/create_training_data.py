@@ -96,7 +96,7 @@ def mix_audio_with_noise(clean_dir, noise_dir, output_dir, snr_range, sample_rat
 
     # Save metadata to CSV file
     metadata_df = pd.DataFrame(metadata)
-    metadata_csv_path = get_path('Metadata/metadata.csv')
+    metadata_csv_path = get_path('Metadata/metadata_dev_8k.csv')
     metadata_df.to_csv(metadata_csv_path, index=False)
 
     return metadata_csv_path
@@ -104,7 +104,7 @@ def mix_audio_with_noise(clean_dir, noise_dir, output_dir, snr_range, sample_rat
 clean_dir = get_path('Datasets/Clean_Datasets/LibriSpeech_Datasets/dev-clean_8000Hz')  # Clean Speech Dir   "LibriSpeech_Small"
 noise_dir = get_path("Datasets/Noise_Datasets/Noise_Dev")  # Noise Dir
 output_dir = get_path("Datasets/Mixed_Datasets/Mix_Output_Dev_8k")
-snr_range = (5, 30)  # Desired SNR in 
+snr_range = (5, 20)  # Desired SNR in 
 sample_rate = 8000
 
 mix_audio_with_noise(clean_dir, noise_dir, output_dir, snr_range, sample_rate)
