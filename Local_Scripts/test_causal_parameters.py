@@ -170,14 +170,14 @@ def main(sample_rate, metadata_path, num_epochs, hyperparams, results_path, epoc
 
 if __name__ == '__main__':
     sample_rate = 8000
-    num_epochs = 3
+    num_epochs = 10
 
     # Small dataset for quick testing
     metadata_path = get_path('Metadata/metadata_dev_8k.csv')
 
     # Hyperparameters to tune
     hyperparams = {
-        'learning_rate': [1e-3, 1e-4, 1e-5],
+        'learning_rate': [1e-4, 1e-5],
         'weight_decay': [1e-4, 1e-6]
     }
 

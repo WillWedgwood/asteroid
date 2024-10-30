@@ -54,8 +54,8 @@ def plot_epoch_results(epoch_results_path, results_path):
 
 if __name__ == '__main__':
     # Paths to the CSV files
-    epoch_results_path = 'epoch_results.csv'
-    results_path = 'hyperparameter_tuning_results.csv'
+    epoch_results_path = 'epoch_results_dev.csv'
+    results_path = 'hyperparameter_tuning_results_dev.csv'
 
     # Plot the epoch results
     plot_epoch_results(epoch_results_path, results_path)
