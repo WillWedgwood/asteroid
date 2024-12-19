@@ -122,6 +122,9 @@ venv.bak/
 *.flac
 *.wav
 Audio_Sources/
-Datasets/Clean_Datasets/LibriSpeech_Datasets/
 Trained_Models/Training_Reports/
 *.DS_Store
+/Datasets
+/Metadata
+/onnxruntime
+/onnx_models

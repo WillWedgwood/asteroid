@@ -234,10 +234,10 @@ def main(sample_rate, metadata_path, num_epochs):
 
 if __name__ == '__main__':
 
-    sample_rate = 8000
-    num_epochs  = 15
+    sample_rate = 16000
+    num_epochs  = 3
 
     # Create a new path by appending a relative path
-    metadata_path = get_path('Metadata/metadata_small_8k.csv')
+    metadata_path = get_path('Datasets/NBC_Data/Prepped_For_Training/metadata.csv')
     
     main(sample_rate, metadata_path, num_epochs)
