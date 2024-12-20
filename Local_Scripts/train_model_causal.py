@@ -238,6 +238,6 @@ if __name__ == '__main__':
     num_epochs  = 3
 
     # Create a new path by appending a relative path
-    metadata_path = get_path('Datasets/NBC_Data/Prepped_For_Training/metadata.csv')
+    metadata_path = get_path('Datasets/NBC_Data/NBC_Training_Data_Dec_2024/metadata.csv')
     
     main(sample_rate, metadata_path, num_epochs)
